@@ -1,0 +1,173 @@
+@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f0f2f5;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.form-layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 500px max-content;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.form-layout .page-texts,
+.form-layout .form-design {
+  display: inline-block;
+}
+
+.form-layout .page-texts {
+  /* width: 580px; */
+  padding-right: 32px;
+  margin-top: 60px;
+}
+.form-layout .page-texts img {
+  height: 106px;
+  margin: -28px;
+}
+
+.form-layout .page-texts h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 15px;
+  line-height: 32px;
+  color: #1c1e21;
+}
+
+/* form desgin  */
+
+.form-design form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+  padding: 20px 20px 28px;
+}
+
+form .form-group {
+  margin-bottom: 13px;
+}
+
+form .form-group input {
+  padding: 14px 16px;
+  width: 365px;
+  border: 1px solid #dddfe2;
+  font-size: 17px;
+  border-radius: 7px;
+  outline: none;
+}
+
+form .form-group input:focus {
+  border: 1px solid rgb(11, 91, 211);
+  box-shadow: 0 0 8px rgba(3, 104, 255, 0.2);
+}
+
+.submit-btn {
+  margin-top: 20px;
+}
+
+.submit-btn button,
+.create-account .create-btn {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  line-height: 48px;
+  border: 0;
+  cursor: pointer;
+  background-color: #1877f2;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-bottom: 13px;
+}
+
+.submit-btn button:hover {
+  background-color: #1673ee;
+}
+
+.forget-link a {
+  color: #1877f2;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.forget-link a:hover {
+  text-decoration: underline;
+}
+
+.bdr {
+  width: 370px;
+  height: 1px;
+  background-color: #dadde1;
+  margin: 20px auto;
+}
+
+.create-account .create-btn {
+  display: block;
+  text-decoration: none;
+  width: 90%;
+  font-size: 17px;
+  text-transform: capitalize;
+  margin: 0 auto;
+  background-color: #42b72a;
+}
+
+.create-account .create-btn:hover {
+  background-color: #3eaa29;
+}
+
+.form-texts {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.form-texts p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #1c1e21;
+}
+
+.form-texts p a {
+  font-weight: 600;
+  color: #1c1e21;
+  text-decoration: none;
+}
+.form-texts p a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 991px) {
+  .form-layout .page-texts h2 {
+    font-size: 22px;
+  }
+  .form-layout {
+    grid-template-columns: repeat(1, 410px);
+    row-gap: 30px;
+  }
+}
